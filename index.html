@@ -11,7 +11,7 @@
 {margin: 0;}
 
 body{
-    background-color: coral;
+    background-color:dodgerblue;
 }
 
 h2{
@@ -20,15 +20,16 @@ h2{
 
 }
 
-nav{
-    background-color: khaki;
+header{
+    background-color: #000;
     padding: 35px;
 }
 
 #image{
     
     width: 100%;
-padding-bottom:60%;
+    
+padding-bottom:30%;
 border: 1px solid #000;
 
 background-size:cover;
@@ -36,7 +37,69 @@ text-align: center;
 
     background-image: url("BANNER\ copy.jpg");
 }
+nav ul li {
+display: inline-block;
+position:relative;
+margin: 20px;
 
+
+
+}
+
+nav ul li a {
+color: #000;
+text-decoration: none;
+color: #fff;
+margin: 20px;
+font-size: 25px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+
+
+}
+nav{
+    text-align: center;
+    background-color: grey;
+
+}
+
+p{ text-align: center;
+color: aliceblue;
+font-size: 30px;
+margin-left: 250px;
+margin-right: 250px;}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;  /* Prevents overflow */
+  justify-content: space-around; /* Ensures equal spacing */
+  width: 100%;
+  background-color: aqua;
+ 
+}
+
+.container {
+  flex: 1; /* Makes each container take equal space */
+  max-width: 30%; /* Prevents full width */
+  background-color: #000;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.container img {
+  width: 100%; /* Ensures images fit within the container */
+  max-height: 150px; /* Prevents oversized images */
+  object-fit: cover;
+}
+.wrapper{
+background-color: #231814;
+width: 80%;
+margin-right: auto;
+margin-left: auto;
+min-width: 900px;
+max-width: 1280px;
+box-shadow: 5px 6px 4px 2px #000;}
 
 </style>
 
@@ -44,17 +107,43 @@ text-align: center;
 
 </head>
 <body>
+    <div class="wrapper">
+    <header>
+    <h2>Cuevas Design Studio</h2>
+</header>
 
     <nav>
-    <h2>Cuevas Design Studio</h2>
-</nav>
+        <ul>
+          <li><a href="plumbing.html">Home</a></li>
+          <li><a href="plubmingcontact.html">Portfolio</a></li>
+          <li><a href="">Mockups</a></li>
+        </ul>
+      </nav>
+    
 <div id="image">
   <img>
 </div>
+<br>
+<br>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam mollitia autem perferendis officia iste tempora deserunt, nulla facere repellendus recusandae veniam, eos officiis maxime, reiciendis provident cupiditate consequatur? Libero!</p>
 
+<br>
+<br>
+<div class="row">
+    <div class="container">
+        <img src="faucetinstall.jpeg" alt="faucet" >
+        <p>Faucet Installations </p>
+    </div>
+    <div class="container">
+        <img src="waterheater.jpeg" alt="water heater" >
+        <p>Water Heater Installations</p>
+    </div>
+    <div class="container">
+        <img src="drainrepair.jpeg" alt="drain" >
+        <p>Drain Repairs</p>
+    </div>
+</div>
 
-
-
-    
+</div>  
 </body>
 </html>
